@@ -1,4 +1,4 @@
 node {
      git url: 'https://github.com/momokeith/bewamo-ui'
-     sh "ls -l"
+     sh "ls -al"
 }
