@@ -1,3 +1,4 @@
- node ('linux'){
-  stage 'Build and Test'
- }
+node {
+     git url: 'https://github.com/momokeith/bewamo-ui'
+     sh "ls -l"
+}
