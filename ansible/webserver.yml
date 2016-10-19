@@ -10,3 +10,4 @@
     value: staging
   roles:
     - common
+    - apache2

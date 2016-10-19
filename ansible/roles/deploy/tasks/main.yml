@@ -1,0 +1,4 @@
+- name: Deployment
+  copy: src=/home/ubuntu/index.html dest=/var/www/index.html owner=www-data group=www-data mode=0644
+  notify:
+      - restart apache2
