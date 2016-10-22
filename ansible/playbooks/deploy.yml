@@ -1,0 +1,14 @@
+---
+- name: Deploy bewamo-ui
+  hosts: tag_{{ tag }}_{{ value }}
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+
+  vars:
+    tag: Name
+    value: staging
+  roles:
+    - common
+    - apache2
+    - deploy
