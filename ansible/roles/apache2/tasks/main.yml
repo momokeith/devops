@@ -21,4 +21,4 @@
     src: "/etc/apache2/sites-available/vhosts.bewamo-ui.conf"
     dest: "/etc/apache2/sites-enabled/vhosts.bewamo-ui.conf"
     state: link
-  notify: restart apache
+  notify: restart apache2
