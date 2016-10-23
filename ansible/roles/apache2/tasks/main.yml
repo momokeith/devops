@@ -18,7 +18,7 @@
 
 - name: Add vhost symlink in sites-enabled.
   file:
-    src: "/etc/apache/sites-available/vhosts.bewamo-ui.conf"
+    src: "/etc/apache2/sites-available/vhosts.bewamo-ui.conf"
     dest: "/etc/apache2/sites-enabled/vhosts.bewamo-ui.conf"
     state: link
   notify: restart apache
