@@ -6,3 +6,19 @@
     install-recommends=no
     update_cache=yes
     state=present
+
+- name: Add apache vhosts configuration.
+  template:
+    src: "vhosts.bewamo-ui.conf"
+    dest: "/etc/apache2/sites-available/vhosts.bewamo-ui.conf"
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart apache2
+
+- name: Add vhost symlink in sites-enabled.
+  file:
+    src: "/etc/apache/sites-available/vhosts.bewamo-ui.conf"
+    dest: "/etc/apache2/sites-enabled/vhosts.bewamo-ui.conf"
+    state: link
+  notify: restart apache
