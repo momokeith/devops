@@ -1,10 +1,12 @@
 - name: Create project directory
   file: path=/var/www/bewamo-ui state=directory mode=0755
 
+- name: Create project directory
+  file: path=/var/www/bewamo-ui/bewamo state=directory mode=0755
+
 - name: cloning repo
-  git: repo=https://github.com/momokeith/bewamo-ui.git
+  copy: src=/var/lib/jenkins/workspace/Bewamo-ui_BuildAndDeployToStaging/dist/
        dest=/var/www/bewamo-ui/bewamo
-       version=master
 
 - name: Create link
   file: path=/var/www/bewamo-ui/current src=/var/www/bewamo-ui/bewamo state=link mode=0755
