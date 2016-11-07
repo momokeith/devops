@@ -10,14 +10,14 @@
 - name: Add apache vhosts configuration.
   template:
     src: "vhosts.bewamo-ui.conf"
-    dest: "/etc/apache2/sites-available/vhosts.bewamo-ui.conf"
+    dest: "/etc/apache2/sites-available/vhosts.{{ project_name}}.conf"
     owner: root
     group: root
     mode: 0644
 
 - name: Add vhost symlink in sites-enabled.
   file:
-    src: "/etc/apache2/sites-available/vhosts.bewamo-ui.conf"
-    dest: "/etc/apache2/sites-enabled/vhosts.bewamo-ui.conf"
+    src: "/etc/apache2/sites-available/vhosts.{{ project_name}}.conf"
+    dest: "/etc/apache2/sites-enabled/vhosts.{{ project_name}}.conf"
     state: link
   notify: restart apache2
