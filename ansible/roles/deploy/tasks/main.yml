@@ -1,14 +1,14 @@
 - name: Create project directory
-  file: path=/var/www/bewamo-ui state=directory mode=0755
+  file: path=/var/www/{{ project_name }} state=directory mode=0755
 
 - name: Create project directory
-  file: path=/var/www/bewamo-ui/bewamo state=directory mode=0755
+  file: path=/var/www/{{ project_name }}/bewamo state=directory mode=0755
 
 - name: cloning repo
   copy: src=/var/lib/jenkins/workspace/Bewamo-ui_BuildAndDeployToStaging/dist/
-       dest=/var/www/bewamo-ui/bewamo
+       dest=/var/www/{{ project_name }}/bewamo
 
 - name: Create link
-  file: path=/var/www/bewamo-ui/current src=/var/www/bewamo-ui/bewamo state=link mode=0755
+  file: path=/var/www/{{ project_name }}/current src=/var/www/{{ project_name }}/bewamo state=link mode=0755
   notify:
       - restart apache2
