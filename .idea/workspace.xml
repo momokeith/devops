@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2d99a9d4-c8ed-4a51-b9e6-530641aeed14" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/roles/deploy/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/deploy/tasks/main.yml" />
     </list>
     <ignored path="devops.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="main.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ansible/roles/deploy/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+            <state relative-caret-position="60">
+              <caret line="4" column="47" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -441,12 +440,12 @@
       <workItem from="1477400457494" duration="643000" />
       <workItem from="1478106193307" duration="527000" />
       <workItem from="1478532786086" duration="705000" />
-      <workItem from="1478535955723" duration="1119000" />
+      <workItem from="1478535955723" duration="1255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7777000" />
+    <option name="totallyTimeSpent" value="7913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="714" extended-state="0" />
@@ -892,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ansible/roles/deploy/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+        <state relative-caret-position="60">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="47" />
           <folding />
         </state>
       </provider>
