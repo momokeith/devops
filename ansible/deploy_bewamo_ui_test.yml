@@ -1,7 +1,7 @@
 ---
 - name: Deploy Bewamo-ui
-  hosts: tag_Name_{{ tag_name }}
-  remote_user: ubuntu
+  hosts: webservers
+  remote_user: user
   become: yes
   become_method: sudo
   vars:
