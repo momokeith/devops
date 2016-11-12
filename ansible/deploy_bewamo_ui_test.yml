@@ -6,12 +6,8 @@
   become_method: sudo
   vars:
     project_name: bewamo-ui
-    artifact_path: '/var/lib/jenkins/workspace/Bewamo-ui_BuildAndDeployToStaging/dist/'
-    artifact_id: bewamo
 
   roles:
     - common
-    - {role: apache2, project_name: bewamo-ui}
-    - {role: deploy, project_name: bewamo-ui,
-              artifact_path: '/var/lib/jenkins/workspace/Bewamo-ui_BuildAndDeployToStaging/dist/',
-              artifact_id: bewamo}
+    - {role: apache2}
+    - {role: deploy}

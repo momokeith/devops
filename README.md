@@ -2,6 +2,6 @@
 
 ## Deploying bewamo-ui
 ```
-ansible-playbook deploy.yml --extra-vars "project_name=bewamo-ui tag_name=staging"
-ansible-playbook deploy_bewamo_ui_test.yml -i hosts.yml
+ansible-playbook deploy_bewamo_ui.yml --extra-vars "artifact_path=/tmp/bewamo-ui artifact_id=123654 tag_name=staging"
+ansible-playbook deploy_bewamo_ui_test.yml -i hosts.yml --extra-vars "artifact_path=/tmp/bewamo-ui artifact_id=123654"
 ```
