@@ -9,7 +9,7 @@
 
 - name: Add apache vhosts configuration.
   template:
-    src: "vhosts.bewamo-ui.conf"
+    src: "vhosts.{{ project_name }}.conf"
     dest: "/etc/apache2/sites-available/vhosts.{{ project_name}}.conf"
     owner: root
     group: root

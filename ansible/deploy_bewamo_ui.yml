@@ -9,5 +9,5 @@
 
   roles:
     - common
-    - {role: apache2}
-    - {role: deploy}
+    - apache2
+    - deploy

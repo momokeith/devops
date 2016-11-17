@@ -1,0 +1,13 @@
+{
+  "artifact_path": "/tmp/bewamo-ui",
+  "artifact_id": "123654",
+  "tag_name": "staging",
+  "project_name": "bewamo-ui",
+  "project_tags":[
+    "web",
+    "angular"
+  ],
+  "hosts":[
+    "tag_Name_staging"
+  ]
+}
